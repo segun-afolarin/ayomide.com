@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afolarin Ayomide | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+
+    <nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="logo.png" alt="CyberDev logo" class="logo-icon" />
+      <span class="brand-name">CyberDev</span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="nav-toggle" id="nav-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <canvas id="star-canvas"></canvas>
+  <div class="hero-container">
+    <!-- Left Content -->
+    <div class="hero-content">
+      <h1>Hello, it's me, <span>Afolarin Ayomide</span></h1>
+      <h2>
+        I'm a <span id="dynamic-text"></span><span class="cursor">|</span>
+      </h2>
+
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <button id="more-btn">More About Me</button>
+    </div>
+
+    <!-- Right Content -->
+    <div class="hero-image">
+      <img id="profile-img" src="girl.jpg" alt="Afolarin Ayomide photo" />
+    </div>
+  </div>
+</section>
+
+
+
+      <section id="about">
+  <div class="about-container">
+    <!-- Left: Image -->
+    <div class="about-image">
+      <img src="girl.jpg" alt="Afolarin Ayomide portrait" />
+    </div>
+
+    <!-- Right: Text -->
+    <div class="about-content">
+      <h2>About Me</h2>
+      <h3>Afolarin Ayomide</h3>
+      <p>
+        I’m a Cyber Security student at Mewar International University, Nigeria, 
+        passionate about building secure digital experiences and educating others on safe online practices. 
+        My current project, <strong>PrivGuard</strong>, focuses on protecting email accounts through 
+        ethical research and defensive automation. 
+      </p>
+      <p>
+        Beyond cybersecurity, I’m a <strong>Python developer</strong> and 
+        <strong>graphic designer</strong> who enjoys turning complex problems into 
+        simple, effective solutions — whether through code or visuals. 
+      </p>
+      <p>
+        My goal is to help individuals and organizations stay protected 
+        in a constantly evolving digital landscape while continuing to grow as a developer 
+        and security researcher.
+      </p>
+
+      <a href="#contact" id="contact-btn">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="video-profile">
+  <div class="video-profile-container">
+    <header class="video-header">
+      <h1><i class="fa-solid fa-user"></i> Video Profile: Afolarin Ayomide</h1>
+      <p class="video-subtitle">
+        Cyber Security Student • Python Developer • Graphic Designer
+      </p>
+      <p class="video-intro">
+        This video offers a closer look at Ayomide’s journey — her passion for 
+        cybersecurity, creativity in design, and commitment to building safer digital spaces.
+      </p>
+    </header>
+
+    <div class="video-showcase">
+      <video id="profile-video" controls poster="images/video-poster.jpg">
+        <source src="About.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+<section id="education-experience-certifications">
+  <div class="multi-section-container">
+    <!-- Display area -->
+    <div id="content-area">
+      <!-- Education (default visible) -->
+      <div class="section active" id="education-section">
+        <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h2>Education</h2>
+        <p>
+          <strong>Mewar International University, Nigeria</strong><br />
+          Bachelor’s Degree in Cyber Security<br />
+          <em>Expected Graduation: 2026</em><br /><br />
+          Focus areas include network defense, ethical hacking, 
+          and secure software development.
+        </p>
+      </div>
+
+      <!-- Experience -->
+      <div class="section" id="experience-section">
+        <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h2>Experience</h2>
+        <p>
+          <strong>Freelance Python Developer & Security Enthusiast</strong><br />
+          Developed small-scale Python automation tools and security prototypes, 
+          including <strong>PrivGuard</strong> — a research project on email safety.<br /><br />
+          Collaborated on design projects leveraging both coding and visual skills.
+        </p>
+      </div>
+
+      <!-- Certifications -->
+      <div class="section" id="certifications-section">
+        <div class="icon"><i class="fa-solid fa-certificate"></i></div>
+        <h2>Certifications</h2>
+        <p>
+          <strong>Graphic Design Certificate</strong><br />
+          Recognized for completing a professional design program focused on 
+          digital branding, visual storytelling, and UI/UX design principles.
+        </p>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="nav-controls">
+      <button id="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+      <button id="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="skills">
+  <div class="skills-container">
+    <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h3>Graphic Design / UI/UX Design</h3>
+        <div class="counter" data-target="60">0</div>
+        <span>%</span>
+      </div>
+
+      <div class="skill">
+        <h3>Python</h3>
+        <div class="counter" data-target="75">0</div>
+        <span>%</span>
+      </div>
+
+      <div class="skill">
+        <h3>Cyber Security</h3>
+        <div class="counter" data-target="85">0</div>
+        <span>%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="services">
+  <div class="services-container">
+    <h2><i class="fa-solid fa-briefcase"></i> My Services</h2>
+    <p class="services-intro">
+      I provide practical, reliable solutions across development, design, and cybersecurity — helping individuals and organizations build safer, smarter digital experiences.
+    </p>
+
+    <div class="services-grid">
+      <!-- Python Development -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-brands fa-python"></i>
+        </div>
+        <h3>Python Development</h3>
+        <p>
+          Writing efficient, maintainable code for automation, data processing, and backend logic.
+          I build reliable scripts and tools that streamline workflows and enhance productivity.
+        </p>
+      </div>
+
+      <!-- Graphic Design -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-palette"></i>
+        </div>
+        <h3>Graphic Design</h3>
+        <p>
+          Creating clear, impactful visuals that communicate ideas and strengthen brand identity.
+          From social media assets to UI mockups, every design is built with precision and intent.
+        </p>
+      </div>
+
+      <!-- Cyber Security Consulting -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3>Cyber Security Consulting</h3>
+        <p>
+          Assessing vulnerabilities, implementing secure practices, and educating users on cyber hygiene.
+          Focused on practical defense — not fear tactics — for real-world digital safety.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects">
+  <div class="projects-container">
+    <h2><i class="fa-solid fa-diagram-project"></i> My Projects</h2>
+
+    <!-- Category Navigation -->
+    <div class="project-nav">
+      <button class="project-btn active" data-category="privguard">PrivGuard</button>
+      <button class="project-btn" data-category="design">Graphic Design</button>
+    </div>
+
+    <!-- Projects Display Area -->
+    <div class="projects-content">
+      <!-- PrivGuard Projects -->
+      <div class="project-category active" id="privguard">
+        <div class="project-card">
+          <h3>PrivGuard – Code Implementation</h3>
+          <pre><code class="language-python">
+# Python logic for email protection - PrivGuard
+
+def is_suspicious(msg):
+    keywords = ["free money", "click here", "urgent"]
+    return any(k.lower() in msg.lower() for k in keywords)
+
+def spam_protection(email):
+    print(f"Starting protection for {email}...\n")
+    sample_emails = [
+        "Hello! Free money waiting for you!",
+        "Team meeting notes",
+        "Click here to claim your prize"
+    ]
+    for i, msg in enumerate(sample_emails, 1):
+        status = "⚠ Suspicious" if is_suspicious(msg) else "✔ Safe"
+        print(f"[{i}] {status}: {msg[:30]}...")
+    print("\nEmail secured!")
+    return "Email secured!"
+
+# Example usage
+spam_protection("user@example.com")
+</code></pre>
+
+          <div class="overlay">
+            <p>Core backend logic for PrivGuard's email defense system.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>PrivGuard – User Interface</h3>
+          <img src="one.jpg" alt="PrivGuard UI Screenshot" />
+          <div class="overlay">
+            <p>Modern, minimal interface for the PrivGuard security dashboard.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphic Design Projects -->
+      <div class="project-category" id="design">
+        <div class="design-gallery">
+          <div class="project-card">
+            <img src="de1.jpg" alt="Graphic Design Work 1" />
+            <div class="overlay">
+              <p>Brand identity concept — minimalist logo design.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="de2.jpg" alt="Graphic Design Work 2" />
+            <div class="overlay">
+              <p>Poster layout emphasizing contrast and hierarchy.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="de4.jpg" alt="Graphic Design Work 3" />
+            <div class="overlay">
+              <p>UI/UX concept for a creative portfolio app.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="de5.jpg" alt="Graphic Design Work 4" />
+            <div class="overlay">
+              <p>Illustration combining texture and geometry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="contact-container">
+    <h2><i class="fa-solid fa-envelope"></i> Let's Work Together</h2>
+    <p class="contact-intro">
+      Have a project in mind or want to collaborate? I’m open to opportunities in 
+      cybersecurity, development, and design. Drop your details below and let’s connect.
+    </p>
+
+    <form id="contact-form" action="https://formspree.io/f/mnngewdb" method="post">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" id="submit-btn">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-container">
+
+    <!-- Branding -->
+    <div class="footer-branding">
+      <img src="logo.png" alt="CyberDev Logo" class="footer-favicon" />
+      <span class="brand">CyberDev</span>
+      <span class="brand-tagline" id="footer-typing"><span class="footer-cursor">|</span></span>
+    </div>
+
+    <!-- Footer System Links -->
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="mailto:ayomide@example.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="footer-copy">
+      &copy; 2025 Afolarin Ayomide | All Rights Reserved
+    </p>
+  </div>
+</footer>
+
+      <script src="script.js"></script>
+    </section>
+  </body>
+</html>
