@@ -272,7 +272,7 @@ html, body {
 }
 
 /* Button */
-#more-btn {
+#more-btn  {
   padding: 0.9rem 1.8rem;
   background: var(--primary);
   border: none;
@@ -283,7 +283,10 @@ html, body {
   box-shadow: 0 0 18px rgba(30, 58, 138, 0.45);
   transition: all 0.3s ease;
 }
-
+#more-btn a{
+   text-decoration: none;
+   color: white;
+}
 #more-btn:hover {
   background: var(--primary-hover);
   transform: translateY(-2px);
